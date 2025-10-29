@@ -3,20 +3,28 @@
     padding:0;
     box-sizing:border-box;
 }
-.main-container{
-    /* border:1px solid orange; */
+/* .main-container{
+    border:1px solid orange;
   
-}
+} */
 header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 16px;
-    background-color: rgb(222, 239, 245);
+         width: 100%;
+        /* padding-inline: 80px; */
+        position: absolute;
+        z-index: 2;
+    /* background-color: rgb(222, 239, 245); */
 }
 header ul , header button{
     display:none;
+}
+header ul li a{
+    text-decoration: none;
+    color: #f6f8f5;
 }
 .logo{
     max-width:60px;
@@ -34,15 +42,33 @@ header ul , header button{
     width: 50px;
     height: 50px;
 }
+#hero-section> * {
+  position: relative;
+  z-index: 2;
+}
+
 #hero-section{
     display:flex;
     flex-direction:column;
     align-items:center;
     /* background-color: rgb(168, 168, 168); */
-    padding: 36px 0;
+    padding: 88px 0;
     background-image: url(./assets/imgi_16_header-hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: bottom center;
+    position: relative;
+}
+#hero-section::before {
+    content: ""; /* REQUIRED for ::before to render */
+    position: absolute; /* Position it over the hero */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(43, 43, 43);
+    opacity: 0.5; /* Optional: control overlay strength */
+    z-index: 1; /* Make sure it’s on top of background */
 }
 #hero-section h2, #hero-section h1, #hero-section p{
      font-family: "DM Sans", sans-serif;
@@ -234,6 +260,43 @@ footer .footer-img img{
     width:100%;
 }
 
+/* About page */
+#hero-wrapper > * {
+  position: relative;
+  z-index: 2;
+}
+ #hero-wrapper {
+    position: relative; /* Needed so ::before can position inside */
+    background-image: url(assets/imgi_14_header-hero-1.jpg);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hero-wrapper::before {
+    content: ""; /* REQUIRED for ::before to render */
+    position: absolute; /* Position it over the hero */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(43, 43, 43);
+    opacity: 0.5; /* Optional: control overlay strength */
+    z-index: 1; /* Make sure it’s on top of background */
+}
+
+
+#hero-wrapper #about-head{
+    padding: 120px;
+    display: flex;
+    justify-content: center;
+}
+#hero-wrapper #about-head p{
+    font-size: 78px;
+    color: #f6f8f5;
+    font-family: "DM Sans", sans-serif;
+
+}
 @media only screen and (min-width:768px) {
     header{
         padding-inline: 80px ;
@@ -264,7 +327,7 @@ header button{
         display: none;
     }
     #hero-section{
-        padding: 120px 0;;
+        padding: 150px 0;;
     }
     #hero-section h2{
         font-size: 50px;
