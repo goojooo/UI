@@ -544,6 +544,49 @@ footer .footer-img img {
     flex-direction: row;
     justify-content: center;
 }
+
+/* Service page*/
+#starter-wrapper{
+    width: 100%;
+    margin-block: 60px;
+}
+.s-text{
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+}
+.s-block div{
+    width: 100%;
+    padding: 0 20px 20px;
+}
+.s-block div img{
+    width: 100%;
+}
+.s-text .top, .s-text h3{
+    font-size: 15px;
+    color: #536941B3;
+    font-family: "DM Sans", sans-serif;
+    line-height: 30px;
+}
+.s-text h4{
+    font-size: 30px;
+    font-family: "Forum", serif;
+    font-weight: 400;
+    color: #536942;
+}
+.s-text h3{
+      font-size: 19px !important;
+      font-weight: 400;
+      color: #536942;
+}
+.s-text button{
+    padding: 15px 30px 15px 30px;
+        background-color: #FFFFFF00;
+        color: #536942;
+        width: 50%;
+        border: 1px solid #536942;
+        border-radius: 4px;
+}
 @media only screen and (min-width:768px) {
     header {
         padding-inline: 80px;
@@ -730,4 +773,58 @@ footer .footer-img img {
     #testimonial-picture {
         flex-direction: row;
     }
+    #contact-form-section{
+        flex-direction:row;
+        justify-content:space-evenly;
+    }
+    .form-content,  .form-content .head, #contact-form-section h4 {
+        text-align:left;
+    }
+    .form-content{
+        padding-top:0;
+    }
+    .form-con{
+        max-width:520px;
+                display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .fcc-icon{
+        justify-content: flex-start;
+        padding-bottom:0;
+    }
+    #contact-form-section h4, .form-content .head{
+        font-size: 40px;
+    }
+    .form-content-child p{
+        font-size: 14px;
+    } .form-content-child h3{
+        font-size: 18px !important;
+    }
+    #starter-wrapper{
+        margin: 0;
+    }
+    .s-block {
+    display: flex;
+    align-items: center;
+    padding: 80px;
+    justify-content: center;
+}
+.s-block div,.s-text{
+    padding: 10px 10px 10px 50px;
+}
+.s-text h4{
+    font-size: 34px;
+}
+.s-text button{
+    width: 25%;
+}
+.img-con{
+    max-width: 460px;
+    padding-left: 80px !important;
+}
+
+.s-text{
+    max-width: 612px;
+}
 }
