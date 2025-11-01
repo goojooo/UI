@@ -905,4 +905,7 @@ footer .footer-img img {
     width:80px;
     height:80px;
 }
+.emo-section .txt-con{
+    justify-content: space-between;
+}
 }
