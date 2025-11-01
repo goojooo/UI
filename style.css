@@ -887,6 +887,10 @@ footer .footer-img img {
 }
 .emo-section{
     padding-inline: 20px;
+    flex-direction: row;
+}
+.emo-section .txt-con{
+    width: 50%;
 }
 .s-text{
     max-width: 612px;
@@ -895,5 +899,10 @@ footer .footer-img img {
     display: grid;
     grid-template-columns: auto auto;
     row-gap: 60px;
+    width: 50%;
+}
+.s-p-img-con .img-b .em-max{
+    width:80px;
+    height:80px;
 }
 }
