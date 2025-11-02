@@ -354,6 +354,12 @@ footer .footer-img img {
     background-repeat: no-repeat !important;
     background-size: cover !important;
 }
+#testimonial-picture .img-block{
+    width:100%
+}
+#testimonial-picture .img-block img{
+    width:100%
+}
 
 #about-page #hero-wrapper::before {
     content: "";
@@ -438,7 +444,7 @@ footer .footer-img img {
 
 /* COntact Us*/
 #testimonial-section {
-    padding-block: 50px 60px;
+    padding: 50px 24px 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
