@@ -251,7 +251,9 @@ header ul li a {
 #about-us #about-us-image {
     display: none;
 }
-
+#about-us-image img{
+    width: 100%;
+}
 #enquiry {
     display: flex;
     flex-direction: column;
